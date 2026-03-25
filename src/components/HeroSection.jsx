@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 // Use the trainer video as hero background (cinematic gym footage)
-const HERO_VIDEO = '/assets/hero.mp4'
+const HERO_VIDEO = asset('/assets/hero.mp4')
 
 export default function HeroSection() {
   const ref = useRef(null)
@@ -74,7 +75,7 @@ export default function HeroSection() {
           className="flex justify-center mb-8"
         >
           <img
-            src="/assets/logo.png"
+            src={asset('/assets/logo.png')}
             alt="Flashfit"
             className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
             loading="eager"

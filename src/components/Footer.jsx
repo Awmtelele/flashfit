@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Instagram, MapPin, Clock } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/assets/logo.png"
+              src={asset('/assets/logo.png')}
               alt="Flashfit"
               className="h-14 w-auto object-contain mb-4"
               loading="lazy"

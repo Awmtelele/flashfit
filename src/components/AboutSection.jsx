@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { asset } from '../utils/asset'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -120,7 +121,7 @@ export default function AboutSection() {
             {/* Main image container */}
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden gold-border vignette">
               <img
-                src="/assets/gallery1.webp"
+                src={asset('/assets/gallery1.webp')}
                 alt="Flashfit Gym"
                 className="w-full h-full object-cover image-cinematic"
                 loading="lazy"

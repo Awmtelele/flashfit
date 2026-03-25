@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { asset } from '../utils/asset'
 import { Star, Award, TrendingUp } from 'lucide-react'
 
 export default function FeaturedSection() {
@@ -134,7 +135,7 @@ export default function FeaturedSection() {
               />
 
               <img
-                src="/assets/athlete.png"
+                src={asset('/assets/athlete.png')}
                 alt="Lallianzuala Chhangte — Inspired by Excellence"
                 className="relative z-10 max-h-[500px] object-contain drop-shadow-2xl"
                 loading="lazy"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -45,7 +46,7 @@ export default function Navbar() {
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
           >
             <img
-              src="/assets/logo.png"
+              src={asset('/assets/logo.png')}
               alt="Flashfit Logo"
               className="h-16 w-auto object-contain"
               loading="eager"
