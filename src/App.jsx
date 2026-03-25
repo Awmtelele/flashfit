@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import FeaturesSection from './components/FeaturesSection'
 import PricingSection from './components/PricingSection'
+import VideoSection from './components/VideoSection'
 import TimingsSection from './components/TimingsSection'
 import FeaturedSection from './components/FeaturedSection'
 import LocationSection from './components/LocationSection'
@@ -18,6 +19,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <FeaturesSection />
+        <VideoSection />
         <PricingSection />
         <FeaturedSection />
         <TimingsSection />
